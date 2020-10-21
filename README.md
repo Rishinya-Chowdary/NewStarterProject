@@ -1,4 +1,4 @@
-## StarterProject
+## Song List Project
 This is a project just to sharpen my basics of React.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
