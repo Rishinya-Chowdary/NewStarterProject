@@ -1,8 +1,15 @@
+## Song List Project
+This is a project just to sharpen my basics of React.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npx create-react-app my-app`
+
+To create a new react app
 
 ### `yarn start`
 
@@ -27,42 +34,30 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+# ProjectDescription
+In this project , a list of songs are displayed with name , duration and a play button for each song on the left panel.
+On the right panel , the name is song that is being played is displayed.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Default Edge case
+A list of songs on the left panel.
+"Click the song to play" on the right panel.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Case1
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+When a play button of a particular song is clicked :
+=> The play button changes to stop.
+=> "Click the song to play" on the right panel is replaced by the name of the song that is being played.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Case2
 
-## Learn More
+When a song is played in the middle of the other song :
+=> The previous song's stop button changes to play.
+=> The current song's play button changes to stop.
+=>On the right panel , the previous song's name is replaced by the current song's name.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Case3
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+When a song that is playing is stopped using the stop button :
+=> The button changes to play.
+=> "Click the song to play" appears again.
